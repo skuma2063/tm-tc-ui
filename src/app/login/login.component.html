@@ -1,0 +1,14 @@
+<div style="text-align: center; margin-top: 50px;">
+  <h2>Login</h2>
+  <form (ngSubmit)="onSubmit()"> <!-- Add form submission handler -->
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" required 
+           [(ngModel)]="username"> <!-- Add ngModel binding --><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" required
+           [(ngModel)]="password"> <!-- Add ngModel binding --><br><br>
+
+    <button type="submit">Login</button>
+  </form>
+</div>
