@@ -23,27 +23,27 @@ export class AppComponent {
   navigateToLogin() {
     console.log('Attempting to navigate to login');
     this.router.navigate(['/login']).then(nav => {
-      console.log('Navigation success:', nav);
+      console.log('Navigation login success:', nav);
     }, err => {
-      console.error('Navigation failed:', err);
+      console.error('Navigation login failed:', err);
     });
   }
 
   navigateToSignUp() {
     console.log('Attempting to navigate to sign up');
     this.router.navigate(['/sign-up']).then(nav => {
-      console.log('Navigation success:', nav);
+      console.log('Navigation sign up success:', nav);
     }, err => {
-      console.error('Navigation failed:', err);
+      console.error('Navigation sign up failed:', err);
     });
   }
   
   navigateToWelcome() {
     console.log('Attempting to navigate to login');
     this.router.navigate(['/']).then(nav => {
-      console.log('Navigation success:', nav);
+      console.log('Navigation welcome success:', nav);
     }, err => {
-      console.error('Navigation failed:', err);
+      console.error('Navigation welcome failed:', err);
     });
   }
 }
